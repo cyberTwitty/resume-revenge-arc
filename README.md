@@ -1,0 +1,1 @@
+This repo is what I built as an alternative to doomscrolling after every cybersecurity rejection. It has helped me grow my skills, clarify my goals, and demonstrate the self-starter attitude I'd love to bring to a team someday.
