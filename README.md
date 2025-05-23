@@ -1,1 +1,3 @@
+I’m a Navy veteran and cybersecurity learner focused on threat modeling, red teaming, and strategic security thinking. While job hunting, I want to stay sharp, learn fast, and show what I’m capable of — not out of spite, but out of love for the work and hunger to prove myself.
+
 This repo is what I built as an alternative to doomscrolling after every cybersecurity rejection. It has helped me grow my skills, clarify my goals, and demonstrate the self-starter attitude I'd love to bring to a team someday.
