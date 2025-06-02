@@ -4,10 +4,17 @@
 
 > This model focuses on the patient document upload feature within Carrum's care coordination platform. Patients are required to create an account to access certain features of the site, which may include uploading medical documents for pre-approval, provider matching, and post-surgery support.¹
 
+## Assumptions (inferred from job postings and open source research)
+
+- Backend stack includes Rails with React frontend
+- File uploads are handled via authenticated user sessions
+- Uploaded files stored in AWS S3 or similar object storage
+- Limited visibility into client-side validation or malware scanning
+
 ## Actors
 
-- Patient: External user uploading files via authenticated portal
-- Care Coordinator: Internal staff viewing or downloading documents uploaded by patients
+- Patient (External User): Uploads files via authenticated portal
+- Care Coordinator (Internal Staff): Views or downloads documents uploaded by patients
 - Attacker: External actor without valid credentials, passively or actively targeting the upload flow
 
 ## Assets
@@ -25,6 +32,12 @@
 - API endpoint related to document handling
 - File preview or download feature
 - Notification systems (e.g. emails, webhooks) triggered by uploads
+
+## Level 1 Data Flow Diagram
+
+The following diagram outlines how patient file uploads flow through Carrum Health’s platform, including authentication, upload handling, secure storage, notification, and access by internal care coordinators.
+
+![Level 1 Data Flow Diagram for Carrum Health’s Upload Workflow](../notes/imgs/carrum-dfd.png)
 
 ## Potential Threats
 
@@ -75,6 +88,7 @@
 | STRIDE Model (Wikipedia) | [Link](https://en.wikipedia.org/wiki/STRIDE_model?utm_source=chatgpt.com) |
 | Red Team Report Template (redteam.guide) | [Link](https://redteam.guide/docs/Templates/report_template/?utm_source=chatgpt.com) |
 | Red Team Scenarios (Prism Infosec) | [Link](https://prisminfosec.com/red-team-scenarios-modelling-the-threats/?utm_source=chatgpt.com) |
+| STRIDE Threat Modeling for Beginners | [Link](https://www.youtube.com/watch?v=rEnJYNkUde0) |
 
 ## Notes
 
